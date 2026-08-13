@@ -24,6 +24,7 @@ export type CategoryLabel = (typeof CATEGORIES)[number]['label'];
 export const NAV = [
   { href: '/guides', label: '가이드' },
   { href: '/blog', label: '아티클' },
+  { href: '/topics', label: '주제' },
   { href: '/previews', label: '프리뷰' },
   { href: '/about', label: '소개' },
 ] as const;

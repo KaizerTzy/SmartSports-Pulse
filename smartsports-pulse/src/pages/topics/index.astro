@@ -1,0 +1,37 @@
+---
+import Base from '../../layouts/Base.astro';
+import { CATEGORIES } from '../../site';
+import { getCollection } from 'astro:content';
+
+const posts = await getCollection('blog');
+const counts = Object.fromEntries(
+  CATEGORIES.map((cat) => [cat.slug, posts.filter((post) => post.data.category === cat.label).length]),
+);
+---
+<Base
+  title="주제별 아티클"
+  description="스포츠 분석, 배당 해설, 경기 프리뷰, 데이터 리터러시, 초보 루틴. 스마트스포츠 펄스 아티클을 주제별로 모아 검색과 학습 경로를 만듭니다."
+  canonical="/topics"
+>
+  <div class="wrap page-hero">
+    <p class="kicker" style="color:var(--pulse-deep)">Topics</p>
+    <h1>주제별 아티클</h1>
+    <p class="muted">
+      스포츠 분석 키워드로 들어오는 독자가 바로 학습 경로를 타도록, 주제를 다섯 칸으로 나눴습니다. 제목에는 도박 홍보
+      키워드를 쓰지 않습니다.
+    </p>
+  </div>
+  <div class="wrap" style="padding-bottom:3.2rem">
+    <div class="grid grid-2">
+      {
+        CATEGORIES.map((cat) => (
+          <a class="card" href={`/topics/${cat.slug}`}>
+            <span class="chip">{String(counts[cat.slug]).padStart(2, '0')}편</span>
+            <h3>{cat.label}</h3>
+            <p class="muted" style="margin:0">{cat.blurb}</p>
+          </a>
+        ))
+      }
+    </div>
+  </div>
+</Base>

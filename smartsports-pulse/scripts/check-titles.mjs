@@ -2,7 +2,7 @@ import { readdir, readFile } from 'node:fs/promises';
 import path from 'node:path';
 
 const FORBIDDEN = /\b(bet|bets|betting|casino|casinos|slot|slots|gambling)\b/i;
-const FORBIDDEN_KO = /(카지노|슬롯머신|도박|불법사이트|먹튀)/;
+const FORBIDDEN_KO = /(카지노|슬롯머신|도박|불법사이트|먹튀|베팅|배팅|토토)/;
 
 const dirs = ['src/content/blog', 'src/content/guides'];
 

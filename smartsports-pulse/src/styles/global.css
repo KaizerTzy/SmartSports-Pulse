@@ -641,6 +641,22 @@ a:hover {
   .hero-inner {
     padding-top: 2.2rem;
   }
+
+  .header-inner {
+    flex-wrap: wrap;
+    min-height: auto;
+    padding: 0.55rem 0 0.7rem;
+  }
+
+  .nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .nav a {
+    padding: 0.35rem 0.6rem;
+    font-size: 0.85rem;
+  }
 }
 
 @media (prefers-reduced-motion: reduce) {

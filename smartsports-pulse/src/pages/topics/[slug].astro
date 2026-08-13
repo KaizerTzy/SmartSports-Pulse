@@ -1,0 +1,38 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { CATEGORIES, SITE } from '../../site';
+
+export function getStaticPaths() {
+  return CATEGORIES.map((category) => ({
+    params: { slug: category.slug },
+    props: { category },
+  }));
+}
+
+const { category } = Astro.props;
+const posts = (await getCollection('blog'))
+  .filter((post) => post.data.category === category.label)
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
+
+const canonical = `/topics/${category.slug}`;
+---
+<Base
+  title={category.label}
+  description={`${category.label} — ${category.blurb}. ${SITE.name}의 한국어 스포츠 분석 아티클 ${posts.length}편.`}
+  canonical={canonical}
+>
+  <div class="wrap page-hero">
+    <p class="kicker" style="color:var(--pulse-deep)">
+      <a href="/topics">주제</a>
+    </p>
+    <h1>{category.label}</h1>
+    <p class="muted">{category.blurb}. 현재 {posts.length}편.</p>
+  </div>
+  <div class="wrap" style="padding-bottom:3rem">
+    <div class="grid grid-3">
+      {posts.map((post) => <PostCard post={post} />)}
+    </div>
+  </div>
+</Base>
