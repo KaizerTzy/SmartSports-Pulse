@@ -1,0 +1,66 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import PostCard from '../../components/PostCard.astro';
+import { CATEGORIES } from '../../site';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime(),
+);
+---
+<Base
+  title="아티클"
+  description="경기 분석, 배당 해설, 데이터 리터러시, AI 프리뷰를 초보 눈높이로 풀어 쓴 스마트스포츠 펄스 아티클."
+>
+  <div class="wrap page-hero">
+    <p class="kicker" style="color:var(--pulse-deep)">Library</p>
+    <h1>아티클</h1>
+    <p class="muted">제목에는 도박 키워드를 쓰지 않습니다. 숫자와 경기를 읽는 글만 모았습니다.</p>
+    <label class="muted" for="q" style="display:block;margin-top:1rem">검색</label>
+    <input class="search" id="q" type="search" placeholder="제목이나 주제로 찾기" />
+    <div class="filters" role="group" aria-label="분류">
+      <button class="filter-btn" type="button" data-cat="all" aria-pressed="true">전체</button>
+      {CATEGORIES.map((cat) => (
+        <button class="filter-btn" type="button" data-cat={cat.label} aria-pressed="false">
+          {cat.label}
+        </button>
+      ))}
+    </div>
+  </div>
+  <div class="wrap" style="padding-bottom:3rem">
+    <div class="grid grid-3" id="post-grid">
+      {posts.map((post) => (
+        <div data-title={`${post.data.title} ${post.data.description}`} data-cat={post.data.category}>
+          <PostCard post={post} />
+        </div>
+      ))}
+    </div>
+  </div>
+</Base>
+
+<script>
+  const input = document.querySelector<HTMLInputElement>('#q');
+  const buttons = document.querySelectorAll<HTMLButtonElement>('.filter-btn');
+  const cards = document.querySelectorAll<HTMLElement>('#post-grid > div');
+  let category = 'all';
+
+  function apply() {
+    const query = (input?.value ?? '').trim().toLowerCase();
+    cards.forEach((card) => {
+      const hay = (card.dataset.title ?? '').toLowerCase();
+      const cat = card.dataset.cat ?? '';
+      const okCat = category === 'all' || cat === category;
+      const okQuery = !query || hay.includes(query);
+      card.hidden = !(okCat && okQuery);
+    });
+  }
+
+  input?.addEventListener('input', apply);
+  buttons.forEach((button) => {
+    button.addEventListener('click', () => {
+      category = button.dataset.cat ?? 'all';
+      buttons.forEach((item) => item.setAttribute('aria-pressed', String(item === button)));
+      apply();
+    });
+  });
+</script>

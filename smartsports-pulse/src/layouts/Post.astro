@@ -1,0 +1,60 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import type { MarkdownHeading } from 'astro';
+import Base from './Base.astro';
+import AffiliateBanner from '../components/AffiliateBanner.astro';
+import DisclaimerNote from '../components/DisclaimerNote.astro';
+import PostCard from '../components/PostCard.astro';
+
+type Props = {
+  post: CollectionEntry<'blog'>;
+  headings: MarkdownHeading[];
+  related: CollectionEntry<'blog'>[];
+};
+
+const { post, headings, related } = Astro.props;
+const date = post.data.pubDate.toLocaleDateString('ko-KR', {
+  year: 'numeric',
+  month: 'long',
+  day: 'numeric',
+});
+const toc = headings.filter((heading) => heading.depth === 2);
+---
+<Base title={post.data.title} description={post.data.description} type="article" published={post.data.pubDate}>
+  <div class="wrap page-hero">
+    <span class="chip">{post.data.category}</span>
+    <h1>{post.data.title}</h1>
+    <p class="muted">{post.data.description}</p>
+    <p class="tiny" style="color:var(--muted)">{date} · 교육용 분석 글</p>
+  </div>
+  <div class="wrap layout-split">
+    <article class="prose">
+      <DisclaimerNote compact />
+      <slot />
+      <AffiliateBanner slotName="in-article" />
+      <h2>함께 읽기</h2>
+      <div class="grid">
+        {related.map((item) => <PostCard post={item} />)}
+      </div>
+    </article>
+    <aside>
+      {
+        toc.length > 0 && (
+          <nav class="toc" aria-label="목차">
+            <strong>이 글에서</strong>
+            <ol>
+              {toc.map((item) => (
+                <li>
+                  <a href={`#${item.slug}`}>{item.text}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )
+      }
+      <div style="margin-top:1rem">
+        <AffiliateBanner slotName="sidebar" />
+      </div>
+    </aside>
+  </div>
+</Base>

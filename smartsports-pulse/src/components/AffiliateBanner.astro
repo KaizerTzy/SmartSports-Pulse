@@ -1,0 +1,27 @@
+---
+import { bannersFor, type BannerSlot } from '../data/banners';
+
+const { slotName } = Astro.props as { slotName: BannerSlot };
+const banners = bannersFor(slotName);
+---
+{
+  banners.length > 0 && (
+    <aside class="banner-stack" aria-label="제휴 배너">
+      {banners.map((banner) => (
+        <a class="banner" href={banner.href} rel={banner.rel} data-affiliate={banner.id}>
+          <span class="kicker">{banner.kicker}</span>
+          <h3>{banner.title}</h3>
+          <p>{banner.body}</p>
+          <span class="cta">{banner.cta} →</span>
+        </a>
+      ))}
+    </aside>
+  )
+}
+
+<style>
+  .banner-stack {
+    display: grid;
+    gap: 0.75rem;
+  }
+</style>

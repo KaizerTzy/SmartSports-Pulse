@@ -1,0 +1,35 @@
+---
+import { SITE } from '../site';
+import AffiliateBanner from './AffiliateBanner.astro';
+---
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div>
+      <h2>{SITE.name}</h2>
+      <p>{SITE.tagline}</p>
+      <p class="tiny">
+        분석은 확률을 읽는 연습입니다. 결과를 보장하지 않으며, 불법 사이트 홍보를 하지 않습니다.
+      </p>
+    </div>
+    <div>
+      <h3>바로가기</h3>
+      <p><a href="/guides">가이드</a></p>
+      <p><a href="/blog">아티클</a></p>
+      <p><a href="/previews">AI 프리뷰</a></p>
+      <p><a href="/about">소개</a></p>
+    </div>
+    <div>
+      <h3>정책</h3>
+      <p><a href="/disclaimer">책임 고지</a></p>
+      <p><a href="/privacy">개인정보 처리방침</a></p>
+      <p><a href="/contact">제휴·문의</a></p>
+      <p><a href="/rss.xml">RSS</a></p>
+    </div>
+  </div>
+  <div class="wrap" style="margin-top:1.4rem">
+    <AffiliateBanner slotName="footer" />
+    <p class="tiny" style="margin-top:1rem">
+      © {new Date().getFullYear()} {SITE.name} · {SITE.domain.replace('https://', '')}
+    </p>
+  </div>
+</footer>

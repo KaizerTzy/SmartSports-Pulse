@@ -1,0 +1,50 @@
+---
+import { getCollection, render } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import DisclaimerNote from '../../components/DisclaimerNote.astro';
+import AffiliateBanner from '../../components/AffiliateBanner.astro';
+
+export async function getStaticPaths() {
+  const guides = await getCollection('guides');
+  return guides.map((guide) => ({
+    params: { slug: guide.id },
+    props: { guide },
+  }));
+}
+
+const { guide } = Astro.props;
+const { Content, headings } = await render(guide);
+const toc = headings.filter((heading) => heading.depth === 2);
+---
+<Base title={guide.data.title} description={guide.data.description} type="article">
+  <div class="wrap page-hero">
+    <span class="chip">{guide.data.kicker}</span>
+    <h1>{guide.data.title}</h1>
+    <p class="muted">{guide.data.description}</p>
+  </div>
+  <div class="wrap layout-split">
+    <article class="prose">
+      <DisclaimerNote compact />
+      <Content />
+    </article>
+    <aside>
+      {
+        toc.length > 0 && (
+          <nav class="toc" aria-label="목차">
+            <strong>목차</strong>
+            <ol>
+              {toc.map((item) => (
+                <li>
+                  <a href={`#${item.slug}`}>{item.text}</a>
+                </li>
+              ))}
+            </ol>
+          </nav>
+        )
+      }
+      <div style="margin-top:1rem">
+        <AffiliateBanner slotName="sidebar" />
+      </div>
+    </aside>
+  </div>
+</Base>

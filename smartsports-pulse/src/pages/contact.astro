@@ -1,0 +1,26 @@
+---
+import Base from '../layouts/Base.astro';
+import { SITE } from '../site';
+---
+<Base
+  title="제휴·문의"
+  description="스마트스포츠 펄스 제휴 배너, 정정 요청, 협업 문의. 불법 사이트 제안은 받지 않습니다."
+>
+  <div class="wrap page-hero prose" style="max-width:46rem;padding-bottom:3rem">
+    <h1>제휴·문의</h1>
+    <p>
+      스포츠 데이터 도구, 합법적인 콘텐츠 파트너, 교육 자료 제휴를 받습니다. 불법 운영 사이트, 보장 수익 광고, 도박 키워드
+      랜딩 제안은 거절합니다.
+    </p>
+    <p>
+      메일: <a href={`mailto:${SITE.email}`}>{SITE.email}</a>
+    </p>
+    <h2>메일에 적어 주세요</h2>
+    <ul>
+      <li>브랜드와 웹사이트</li>
+      <li>배너 위치(사이드바, 본문, 홈, 푸터)</li>
+      <li>랜딩이 교육·도구·합법 서비스인지에 대한 한 줄 설명</li>
+    </ul>
+    <p>정정 요청은 글 제목, URL, 잘못된 부분, 근거를 함께 보내 주시면 빠르게 반영합니다.</p>
+  </div>
+</Base>

@@ -1,0 +1,27 @@
+---
+import Logo from './Logo.astro';
+import { NAV, SITE } from '../site';
+
+const path = Astro.url.pathname.replace(/\/$/, '') || '/';
+---
+<a class="skip-link" href="#main">본문으로 건너뛰기</a>
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/" aria-label={`${SITE.name} 홈`}>
+      <Logo />
+      <span class="brand-copy">
+        <strong>{SITE.name}</strong>
+        <span>{SITE.nameKo}</span>
+      </span>
+    </a>
+    <nav class="nav" aria-label="주요">
+      {
+        NAV.map((item) => (
+          <a href={item.href} aria-current={path === item.href || path.startsWith(item.href + '/') ? 'page' : undefined}>
+            {item.label}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+</header>

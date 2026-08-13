@@ -1,0 +1,14 @@
+---
+const props = Astro.props as { class?: string };
+---
+<svg class={props.class ?? 'brand-mark'} viewBox="0 0 64 64" fill="none" aria-hidden="true">
+  <rect width="64" height="64" rx="16" fill="#0D1C28" />
+  <circle cx="32" cy="32" r="18" stroke="#0F8A7A" stroke-width="2" opacity="0.55" />
+  <path
+    d="M10 34h10l3.2-10 5.4 22 5.8-28 5.2 20 3.4-8H54"
+    stroke="#9EE8DC"
+    stroke-width="2.4"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+</svg>

@@ -1,0 +1,22 @@
+{
+  "name": "smartsports-pulse",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Korean sports analysis guides, odds explainers, and AI match previews for smart-sportshq.com",
+  "engines": {
+    "node": ">=22.12.0"
+  },
+  "scripts": {
+    "dev": "astro dev",
+    "check:titles": "node scripts/check-titles.mjs",
+    "build": "node scripts/check-titles.mjs && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.15",
+    "@astrojs/sitemap": "^3.7.0",
+    "astro": "^7.2.1"
+  }
+}
