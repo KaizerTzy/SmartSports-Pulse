@@ -18,7 +18,7 @@ This file is questions only. No categories, keywords, sitemap, or strategy.
 
 ## Purpose
 
-5. You listed four 90-day outcomes: approachable educational hub, complete beginner library, steady Google indexing, working layout with affiliate banners. Which single miss means the 90 days failed?
+5. You listed five 90-day outcomes: approachable educational hub, complete beginner-guide library, clear odds-breakdown resources, steady Google indexing, fully functional site layout. Which single miss means the 90 days failed?
 6. Is the site’s job to help someone decide whether a price is worth taking, or to help them watch/analyze a match without taking a price? If you want both, which one is the homepage promise?
 
 ## Voice
@@ -37,7 +37,7 @@ This file is questions only. No categories, keywords, sitemap, or strategy.
 ## Constraints
 
 14. The title ban lists English words (`bet`, `casino`, `slots`, `gambling`). Are Korean terms such as 베팅, 토토, 프로토, 픽 also banned? Say where: page titles, H1, body, meta description, or all of them.
-15. Affiliate banners plus “never promote illegal sites” plus a Korean audience is a hard conflict (private books are not legal there). What is the only banner destination you will allow — a partner URL you will paste, official legal channel only, internal pages until you name a partner, or no banners in v1?
+15. You did not approve affiliate banners. An unpublished site branch still ships banner slots. For a Korean audience, private books are not a legal destination. Are banners in v1 at all? If yes, what is the only destination you will allow — a partner URL you will paste, official legal channel only, or internal pages until you name a partner?
 16. Is `smart-sportshq.com` purchased and under your DNS control, or still only a candidate? If Pulse and HQ disagree as brand signals, which string is the public name on the homepage?
 17. Besides the title ban and no guaranteed-profit / no illegal-site rules: 19+ on every page? Any other legal or brand line I must not cross?
 18. There is already an unpublished site branch with invented categories, a tagline, and dozens of posts you did not approve in this interview. For this foundation, do I ignore that branch until you approve structure, or audit it against your answers?
