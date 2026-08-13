@@ -1,60 +1,53 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import DisclaimerNote from '../components/DisclaimerNote.astro';
 import AffiliateBanner from '../components/AffiliateBanner.astro';
+import PostCard from '../components/PostCard.astro';
+
+const previews = (await getCollection('blog'))
+  .filter((post) => post.data.category === '경기 프리뷰')
+  .sort((a, b) => b.data.pubDate.getTime() - a.data.pubDate.getTime());
 ---
 <Base
   title="AI 경기 프리뷰"
-  description="AI가 초안을 잡고 사람이 검증하는 스마트스포츠 펄스의 경기 프리뷰 방법. 승패를 단정하지 않고 관찰 포인트를 남깁니다."
+  description="AI가 초안을 잡고 사람이 검증하는 스마트스포츠 펄스의 경기 프리뷰. 승패를 단정하지 않고 관찰 포인트를 남깁니다."
 >
   <div class="wrap page-hero">
     <p class="kicker" style="color:var(--pulse-deep)">Daily desk</p>
     <h1>AI 경기 프리뷰</h1>
-    <p class="muted">모델은 초안만 씁니다. 결장, 일정, 템포, 세트피스를 사람이 한 번 더 확인한 뒤에야 발행합니다.</p>
+    <p class="muted">
+      모델은 초안만 씁니다. 결장, 일정, 템포, 세트피스를 사람이 한 번 더 확인한 뒤에야 발행합니다. 아래 카드는 추천 슬립이
+      아니라, 검증 순서를 보여 주는 워크드 예시와 종목별 노트입니다.
+    </p>
   </div>
   <div class="wrap" style="padding-bottom:3rem">
     <DisclaimerNote />
     <div class="preview-board" style="margin-top:1.2rem">
       <article class="preview-card">
-        <span class="chip chip-signal">축구 · 워크드 예시</span>
-        <h2>울산 vs 전북, 주말 클래식에서 볼 세 가지</h2>
+        <span class="chip chip-signal">데스크 규칙</span>
+        <h2>초안 → 검증 → 관찰 세 개</h2>
         <p>
-          AI 초안은 “홈 우세”로 기울었지만, 검증 단계에서 원정 팀의 최근 3경기 일정 밀도가 더 낮았습니다. 결론을 바꾸기보다
-          <strong>후반 템포</strong>와 <strong>세트피스 빈도</strong>를 관찰 포인트로 고정했습니다.
+          홈 우세 문장이 나와도 결론을 뒤집기보다 <strong>후반 템포</strong>와 <strong>세트피스 빈도</strong>를 고정합니다.
+          사실·결장·일정이 비면 발행하지 않습니다.
         </p>
         <div class="stat-row">
-          <div class="stat"><span class="muted">초안 기울기</span><b>홈 쪽 근소</b></div>
-          <div class="stat"><span class="muted">검증 후</span><b>템포 불확실</b></div>
-          <div class="stat"><span class="muted">핵심 지표</span><b>세트피스 xG</b></div>
+          <div class="stat"><span class="muted">모델</span><b>초고만</b></div>
+          <div class="stat"><span class="muted">사람</span><b>사실 확인</b></div>
+          <div class="stat"><span class="muted">발행</span><b>관찰 3개</b></div>
         </div>
-        <p class="muted">이 카드는 특정 결과를 추천하지 않습니다. 프리뷰 작성 순서를 보여 주는 예시입니다.</p>
-      </article>
-      <article class="preview-card">
-        <span class="chip">야구 · 워크드 예시</span>
-        <h2>선발 투수 ERA만 보면 놓치는 불펜 이닝</h2>
-        <p>
-          선발 평균자책점이 낮아도 최근 5경기에서 5회 이후 실점이 늘어난 카드입니다. AI는 선발 매치업만 강조했고, 사람은
-          불펜 사용량과 주간 이동 거리를 덧붙였습니다.
+        <p class="muted" style="margin:0">
+          방법은 <a href="/guides/ai-preview-playbook">AI 프리뷰 활용법</a>과
+          <a href="/blog/ai-preview-five-steps">검증 다섯 단계</a>에 정리했습니다.
         </p>
-        <div class="stat-row">
-          <div class="stat"><span class="muted">선발 초안</span><b>품질 우위</b></div>
-          <div class="stat"><span class="muted">불펜 부하</span><b>원정 쪽 높음</b></div>
-          <div class="stat"><span class="muted">관찰</span><b>6회 이후</b></div>
-        </div>
       </article>
-      <article class="preview-card">
-        <span class="chip chip-ink">농구 · 워크드 예시</span>
-        <h2>페이스가 올라간 밤, 효율은 따로 보기</h2>
-        <p>
-          두 팀 모두 최근 페이스가 리그 평균을 웃돌았습니다. 총득점 기대를 바로 올리지 않고, 턴오버와 자유투 비율이 실제
-          소음을 만드는지 먼저 확인하는 프리뷰입니다.
-        </p>
-        <div class="stat-row">
-          <div class="stat"><span class="muted">페이스</span><b>양쪽 높음</b></div>
-          <div class="stat"><span class="muted">효율</span><b>편차 큼</b></div>
-          <div class="stat"><span class="muted">관찰</span><b>턴오버</b></div>
-        </div>
-      </article>
+    </div>
+    <div class="section-head" style="margin-top:2.2rem">
+      <h2>프리뷰 노트</h2>
+      <span class="muted">{previews.length}편</span>
+    </div>
+    <div class="grid grid-3">
+      {previews.map((post) => <PostCard post={post} />)}
     </div>
     <p style="margin-top:1.4rem">
       <a class="btn btn-ink" href="/guides/ai-preview-playbook">검증 5단계 가이드</a>

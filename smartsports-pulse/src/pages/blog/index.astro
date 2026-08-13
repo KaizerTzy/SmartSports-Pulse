@@ -15,7 +15,9 @@ const posts = (await getCollection('blog')).sort(
   <div class="wrap page-hero">
     <p class="kicker" style="color:var(--pulse-deep)">Library</p>
     <h1>아티클</h1>
-    <p class="muted">제목에는 도박 키워드를 쓰지 않습니다. 숫자와 경기를 읽는 글만 모았습니다.</p>
+    <p class="muted">
+      지금 {posts.length}편. 제목에는 도박 키워드를 쓰지 않습니다. 숫자와 경기를 읽는 글만 모았습니다.
+    </p>
     <label class="muted" for="q" style="display:block;margin-top:1rem">검색</label>
     <input class="search" id="q" type="search" placeholder="제목이나 주제로 찾기" />
     <div class="filters" role="group" aria-label="분류">

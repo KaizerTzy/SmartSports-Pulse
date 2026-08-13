@@ -19,7 +19,21 @@ async function titlesIn(dir) {
   return rows;
 }
 
-const rows = (await Promise.all(dirs.map(titlesIn))).flat();
+async function pageTitles() {
+  const abs = path.join(process.cwd(), 'src/pages');
+  const files = await readdir(abs, { recursive: true });
+  const rows = [];
+  for (const file of files) {
+    if (!String(file).endsWith('.astro')) continue;
+    const rel = path.join('src/pages', file);
+    const text = await readFile(path.join(process.cwd(), rel), 'utf8');
+    const title = text.match(/\btitle=["']([^"']+)["']/)?.[1] ?? '';
+    if (title) rows.push({ file: rel, title });
+  }
+  return rows;
+}
+
+const rows = [...(await Promise.all(dirs.map(titlesIn))).flat(), ...(await pageTitles())];
 const violations = rows.filter(
   (row) => FORBIDDEN.test(row.title) || FORBIDDEN_KO.test(row.title),
 );
