@@ -101,12 +101,11 @@ Example matches may only be used as hypothetical, generic educational illustrati
 
 ### 16. Publisher / legal notices
 
+- Country of operation: remote / global (targeting South Korean market).
 - Purpose: Strictly 100% educational and sports analysis content only. The site does not accept, process, or facilitate bets.
 - Required notices: Every page must feature a footer disclaimer stating:
   - a) “본 사이트는 스포츠 분석 및 교육용 정보를 제공하며, 어떠한 형태의 실제 베팅도 진행하지 않습니다.” (This site provides sports analysis and educational information only and does not process any form of actual betting.)
   - b) Standard 19+ age restriction notice and responsible analysis warning.
-
-(Country of operation was not specified in the answer.)
 
 ### 17. Platforms, ads, screenshots, reviews
 
