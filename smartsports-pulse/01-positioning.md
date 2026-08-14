@@ -103,6 +103,8 @@ Deliberately skipped at launch. Not a “misc” pile — these are no’s.
 
 Not partners, not templates to copy, not extra brands invented beyond what you named.
 
+**Additional named identity references (2026-08-14):** Tosigi (tosigi.com), Global Motorsports (global-motorsports.com), Coverspick (coverspick.com), Bitcoin Game (bitcoingame.blog). Full notes and do-not-copy rules: `00-site-references.md`. If those sites contradict this positioning file, **this file wins.**
+
 | | Reference | Use |
 |---|---|---|
 | **Sounds like (hub ambition only)** | Totohot.net — *your* comparison | A Korean sports-info hub people can browse without getting lost. Steal *none* of the pick-board / site-directory / live-listing job. Inspiration for “I could send this to a friend.” |

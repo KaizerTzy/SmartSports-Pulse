@@ -84,3 +84,5 @@ I used **유럽 축구** so K리그 is not silently in scope. Confirm: European 
 
 **E. Phase 2 parking lot — confirm nothing here should sneak into launch nav:**  
 American odds posts; 농구 (NBA/KBL); League of Legends; 전략; live boards; 입문 as a page/tag; 프로토 as a tag.
+
+**F. Named identity references (added; do not expand nav):** Tosigi, Global Motorsports, Coverspick, bitcoingame.blog — see `00-site-references.md`. They do **not** add 카지노, 슬롯, 비트코인, 예측, or 모터스포츠 categories unless you explicitly override positioning (not recommended).
