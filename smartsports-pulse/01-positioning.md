@@ -5,7 +5,8 @@ Candidate domain: smart-sportshq.com
 Primary site language: Korean (존댓말). English working notes in this file.  
 Sources: starter block + `00-interview-answers.md` + positioning clarifications (2026-08-14). No categories, sitemap, or SEO keyword list in this file.
 
-Status: **approved** (2026-08-14). Do not change without a new explicit OK.
+Status: **approved** (2026-08-14). Do not change without a new explicit OK.  
+Note: identity-reference index added 2026-08-14 (`00-site-references.md`). Mission, audience, and Phase 1 scope unchanged.
 
 ---
 
