@@ -3,7 +3,8 @@
 Sources: approved `02-categories.md`, `03-content-system.md`, `04-voice-brand-safety.md`.  
 Research: Korean SERP patterns for 프로토/승무패/핸디캡/오버언더 explainers (2026-08). **No keyword-tool volumes.** Demand notes below are **estimates** (thin / moderate / crowded SERP), not measured monthly searches.
 
-Status: **draft — waiting for approval of primary keywords per category.**
+Status: **approved** (2026-08-15). Do not change primary keywords without a new explicit OK.  
+Synonym rule: titles stay **오버언더**; body may use official Betman (`betman.co.kr`) **언더오버** as a natural secondary term. Not a platform promo.
 
 ---
 
@@ -11,6 +12,7 @@ Status: **draft — waiting for approval of primary keywords per category.**
 
 - Titles, H1, slug, meta follow the brand-safety ban. **Do not target** as chrome keywords: bet, casino, slots, gambling, 카지노, 슬롯, 사설토토, 바카라, 꽁머니, 먹튀, or 베팅/토토 in those fields.  
 - Body may use 베팅/토토 when explaining legal 프로토·스포츠토토 **formats**. That is not a license to rank for 토토 사이트.  
+- **오버언더 vs 언더오버 (locked):** Titles, H1, slug, meta stay **오버언더**. In article body, use Betman’s official term **언더오버** (`betman.co.kr`) as a natural secondary synonym. Name it as terminology, not as a shop: no purchase CTA, no review, no “where to play.”  
 - One primary idea per URL. Long-tails support the outline; they are not extra titles.  
 - Intent we want: **informational**. Commercial “where to play / 추천 사이트” and pick-intent “오늘 분석” fight positioning — **rejected**, even if louder in SERPs.  
 - Brand keywords are for **own-brand clarity** (people who already heard the name), not a vanity traffic plan.
@@ -69,7 +71,7 @@ Beginners type “계산 / 읽는 법 / 차이.” SERPs are **crowded with 사�
 
 **Long-tails:** 승무패 가상 축구, 핸디캡 읽는 법, 핸디캡 정산, 머니라인 승무패 차이 (body/internal link — **not** one combined title), 오버언더 2.5 뜻.
 
-**Note:** Korean toto pages often say **언더오버**; our locked titles say **오버언더**. Use 오버언더 in titles; 언더오버 may appear once in body as “같은 말.” Do not make 언더오버 a second primary.
+**Note (locked):** Titles/H1/slug/meta stay **오버언더**. In **body**, Betman’s official term **언더오버** is a natural secondary synonym. Do not make 언더오버 a primary or a promo.
 
 **Rejected here:** 승무패 픽, 핸디캡 추천, 오늘 라인, American odds / +150 in chrome.
 
@@ -86,7 +88,7 @@ Beginners type “계산 / 읽는 법 / 차이.” SERPs are **crowded with 사�
 
 Optional later (month 2, not a launch primary): 축구 핸디캡 90분.
 
-**Long-tails:** 축구 오버언더 2.5 정산, 축구 90분 득점, 오버 2.5 언더 2.5 차이 (settlement, not a lean).
+**Long-tails:** 축구 오버언더 2.5 정산, 축구 90분 득점, 오버 2.5 언더 2.5 차이 (settlement, not a lean). Body synonym: 언더오버 (Betman official wording).
 
 **Rejected:** 오늘 축구 픽, 해외축구 분석 (pick sense), K리그, 적중 팁.
 
@@ -101,7 +103,7 @@ Optional later (month 2, not a launch primary): 축구 핸디캡 90분.
 | **Primary 1** | 야구 오버언더 | informational | moderate-thin |
 | **Primary 2** (keep to 1 in month 1) | — | — | 야구 핸디캡 is a later post, not launch primary |
 
-**Long-tails:** 야구 오버언더 이닝, 야구 득점 세기, KBO 오버언더 정산, MLB 오버언더 정산 (same mechanic, no picks).
+**Long-tails:** 야구 오버언더 이닝, 야구 득점 세기, KBO 오버언더 정산, MLB 오버언더 정산 (same mechanic, no picks). Body synonym: 언더오버 (Betman official wording).
 
 **Rejected:** KBO 픽, 선발 분석 (as a lean), 오늘 야구 오버 추천.
 
@@ -171,13 +173,10 @@ Working titles 1–10 already follow 1–5. Keep them; do not rewrite for stuffi
 
 ---
 
-## Decisions to confirm
+## Confirmations (locked)
 
-Approve or replace **only the primaries** (long-tails can wait):
-
-**A. 배당 계산:** `소수점 배당 계산` · `프로토 배당표` · `단폴 다폴 차이`  
-**B. 마켓 가이드:** `승무패 의미` · `핸디캡 -1.5` · `머니라인 뜻`  
-**C. 유럽 축구:** `축구 오버언더 2.5` only (month 1)  
-**D. 야구:** `야구 오버언더` only (month 1)
-
-If you want 언더오버 (official toto wording) instead of 오버언더 in primaries, say so — that would fight locked post titles unless we add a body synonym only.
+**A.** 배당 계산: `소수점 배당 계산` · `프로토 배당표` · `단폴 다폴 차이`  
+**B.** 마켓 가이드: `승무패 의미` · `핸디캡 -1.5` · `머니라인 뜻`  
+**C.** 유럽 축구: `축구 오버언더 2.5` only (month 1)  
+**D.** 야구: `야구 오버언더` only (month 1)  
+**E.** Titles stay **오버언더**. Body uses Betman (`betman.co.kr`) **언더오버** as a natural secondary synonym only — not a primary, not a CTA.
