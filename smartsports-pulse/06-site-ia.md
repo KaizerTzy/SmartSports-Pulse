@@ -2,7 +2,7 @@
 
 Sources: approved positioning, categories, content system, voice/safety, SEO map.  
 Constraint: simple WordPress **blog**, not an app. English slugs; Korean UI labels.  
-Status: **draft — waiting for approval of nav and required pages.**
+Status: **approved** (2026-08-15). Do not change nav or required pages without a new explicit OK.
 
 ---
 
@@ -92,7 +92,7 @@ No social icons (none named). **No ad units** at launch (empty chrome). No “�
 
 Rationale: these are evergreen 가이드s, not news or picks; dates in the path make the library look like a match-day blog.
 
-Slugs: English kebab-case, title-safe (no bet/casino/gambling). Proposed for the locked 10 — **confirm or replace; I will not invent extra posts.**
+Slugs: English kebab-case, title-safe (no bet/casino/gambling). **Locked** for the first 10:
 
 | # | Working title | Proposed slug |
 |---|---|---|
@@ -132,10 +132,10 @@ Not Totohot.net. A short Korean mission (payout literacy, not picks), four categ
 
 ---
 
-## Decisions to confirm
+## Confirmations (locked)
 
-1. **Top nav = the four categories only** (About/Privacy in footer). Approve or add/cut.  
-2. **Required pages = Home, About, Privacy, four archives.** Approve?  
-3. **Keep Contact and Shop excluded** at launch?  
-4. **Category paths `/topics/{slug}/`** (vanilla WP) vs you want root `/odds-math/` enough to add a permalink plugin now?  
-5. **Post slugs 1–10** as tabled, or replace any?
+1. Top nav = the four categories only. About and Privacy in the footer.  
+2. Required pages = Home, About, Privacy, four category archives, posts.  
+3. Contact and Shop excluded at launch.  
+4. Category paths stay vanilla WordPress `/topics/{slug}/`. No permalink plugin for root `/odds-math/` at launch.  
+5. Post slugs 1–10 as tabled.
