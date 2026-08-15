@@ -2,7 +2,7 @@
 
 Sources: approved `01-positioning.md`, `02-categories.md`, ops answers in `00-interview-answers.md`.  
 Outlines only. No full drafts.  
-Status: **draft — waiting for approval of cadence and the first-post list.**
+Status: **approved** (2026-08-15). Do not change cadence or the first-post list without a new explicit OK.
 
 ---
 
@@ -172,9 +172,19 @@ Do not publish 5 before 3. Do not publish 9 as the first market post.
 
 ---
 
-## Decisions to confirm
+## Confirmations (locked)
 
-1. **Cadence:** Approve **2/week**, batch of **8** together, month 1 total **10**, ongoing monthly **8**? Or insist on 3/week and 12 (I will not pretend that is the same quality bar).  
-2. **First-post list:** Approve titles 1–10, or replace any title.  
-3. **오버언더:** First taught in posts 7–8 (종목 연결), not as a standalone 마켓 가이드 in this 10. Add a 11th 마켓 오버언더 in month 2, or swap post 10 for it?  
-4. **Post 10** (받을 돈 vs 순수익): keep, drop, or swap for `축구 핸디캡과 90분 스코어` (유럽 축구 #2) to move mix toward 15% sports sooner.
+1. **Cadence:** Batch launch of **8**, then **2/week (Tue + Fri KST)**. Month 1 target **10**. Ongoing **8 posts/month**.  
+2. **Titles 1–10** (unchanged from this file):  
+   1. 소수점 배당, 1만원이면 얼마가 되나  
+   2. 프로토 배당표 읽는 법 (10만원 예시)  
+   3. 단폴과 다폴의 차이, 선택이 늘수록 위험은  
+   4. 다폴 배당 곱셈, 가상 3경기 10만원  
+   5. 승무패가 의미하는 것 (가상 축구 예시)  
+   6. 머니라인이 의미하는 것 (가상 야구 예시)  
+   7. 축구에서 오버언더 2.5가 쓰이는 이유  
+   8. 야구 오버언더, 이닝과 득점 세는 법  
+   9. 핸디캡 -1.5 읽는 법  
+   10. 배당 2.50, 받을 돈과 순수익은 다르다  
+3. **오버언더:** Introduced in sport-specific posts 7 and 8, not as a standalone 마켓 가이드 post in this 10.  
+4. **Post 10:** Keep 받을 돈 vs 순수익.
