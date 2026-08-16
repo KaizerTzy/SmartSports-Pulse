@@ -1,102 +1,117 @@
 # Prompt 7 — Domain readiness (research and checklist only)
 
-Candidate from starter (only one named): **smart-sportshq.com**  
-Blog: SmartSports Pulse (스마트스포츠 펄스). Site language Korean; English domain is intentional.  
-**This file does not purchase, register, or bind hosting.** You decide whether/when to buy.
+Blog: SmartSports Pulse (스마트스포츠 펄스). Korean UI; English domain intentional.  
+**This file does not purchase, register, or bind hosting.**
 
-Status: **advisory.** Availability is **uncertain** from this environment (see below).
+**Locked primary target:** `smartsportspulse.com`  
+**Backup / redirect candidate:** `smartsports-pulse.com`  
+Former starter candidate `smart-sportshq.com` is **superseded** (not the buy target).
+
+Status: **advisory, primary string locked.** Registry checks below are **not** a purchase. Confirm in your registrar before paying (premium price, trademark claims, aftermarket).
 
 ---
 
-## Candidate evaluation — `smart-sportshq.com`
+## Live check (2026-08-16)
+
+Tools: `dig`, `nslookup`, `curl`, Verisign RDAP `https://rdap.verisign.com/com/v1/domain/{name}`.  
+`whois` binary was **not available** in this environment.
+
+| Domain | RDAP (.com registry) | DNS (`dig` / `nslookup`) | HTTPS |
+|---|---|---|---|
+| **smartsportspulse.com** | **HTTP 404** (not in the .com zone) | **NXDOMAIN**; no A/AAAA/NS; TLD SOA only | `Could not resolve host` |
+| **smartsports-pulse.com** | **HTTP 404** | **NXDOMAIN**; no A/AAAA/NS | `Could not resolve host` |
+| smart-sportshq.com (old) | HTTP 404 | (not re-checked this pass) | — |
+
+**Read:** At check time, neither Pulse domain appears **registered in the .com registry** or to have **active DNS**. That is the strongest signal we can get without a registrar cart.
+
+**Still not a guarantee of “buy button = cheap.”** RDAP 404 can coexist with: premium/aftermarket listing, ICANN trademark claims, or a registration that completes while you wait. You must search in **your** registrar account.
+
+Web search: no live site titled SmartSports Pulse on these URLs. Unrelated “SmartSports” entities exist (analytics, sports medicine, gym goods) — fragment overlap only; not these hostnames.
+
+---
+
+## Evaluation
+
+### Primary — `smartsportspulse.com` (locked)
 
 | Lens | Read |
 |---|---|
-| Clarity vs blog name | **Partial match.** Shares “Smart Sports,” drops **Pulse**, adds **HQ**. Spoken/typed brand and URL will not be the same string. That is survivable (you already locked bilingual brand + English domain) but it is a memory tax: people who hear “펄스” will not guess `…hq.com`. |
-| Length | `smart-sportshq` = 14 letters + 1 hyphen. Fine for a blog; not short. |
-| Hyphen risk | **Real.** Default typing is `smartsportshq.com` (no hyphen). Voice: “스마트 스포츠 에이치큐” does not tell the listener where the hyphen is. Hyphen also looks slightly spammy in some Korean toto-adjacent SERPs — not a ban, just a smell. |
-| TLD fit | **.com is fine** for a Korean-audience blog with an English brand. It is not a `.kr` trust signal; you did not name a `.kr` candidate, so this is not a buy-`.kr`-now recommendation. |
-| Pronunciation / spelling | HQ vs Hub; Pulse omitted; hyphen. Korean readers may romanize 스마트스포츠펄스 and miss the domain entirely — brand keywords on the site matter more than the URL for discovery. |
+| Clarity vs blog name | **Strong match.** Same words as SmartSports Pulse, no HQ, no missing Pulse. Better than `smart-sportshq.com`. |
+| Length | 16 letters + `.com`. Acceptable. |
+| Hyphen risk | **None on the primary.** People who type a hyphen would miss — that is what the backup is for. |
+| TLD | `.com` still fits this blog. |
+| Pronunciation / spelling | 스마트스포츠펄스 → `smartsportspulse` is guessable. Risk: `smart-sports-pulse`, `smartsportspuls`, `smart sport pulse`. |
 
-**Availability (uncertain):** A fetch of `https://smart-sportshq.com` returned **503**. DNS lookup from this environment returned **no A record**. That can mean unregistered, parked, or blocked — **do not treat as “available.”** Confirm in a registrar search while logged into *your* account.
+### Backup — `smartsports-pulse.com`
 
----
-
-## Obvious conflict check (high-level web search)
-
-Not a trademark opinion. Uncertainty: search is incomplete; no Korean PTO / USPTO filing review.
-
-| Name / URL | Niche overlap | Confusion risk |
-|---|---|---|
-| **Smart Sports Hub** — [smartsportshub.com](https://smartsportshub.com/) | English sports/gear-style blog (active). **Hub vs HQ** is one letter-sound in English; Korean 허브/에이치큐 still collide when typed. | **Highest lookalike.** Different content (gear/supplements vs 배당 교육) but the *string* is close. |
-| **Sports HQ** — [sportshq.io](https://www.sportshq.io/) | Pickup-games / venue app. | Generic “Sports HQ”; not your full string. Low–medium. |
-| **The Sports HQ** — thesportshq.com / sportshq.com | UK sports retail (golf/cricket). | Same. Low for Korean 배당 readers; high if someone Googles English “sports hq”. |
-| 스마트스포츠 (gym/equipment, KR) / other “SmartSports” manufacturers | Physical goods, not odds education. | Name fragment only. Low for this URL. |
-| **SmartSports Pulse** as a web brand | **No clear existing site** in this search. | Does not prove the name is free. |
-
-No Korean 사설토토 clone using this exact domain showed up in this pass. **Uncertainty: high** for trademarks and for hyphenless-twin ownership.
-
----
-
-## Redirect plan (later, if you want a second TLD/name)
-
-Do this only after the primary is registered and the WP site exists. 301 the extras → `https://smart-sportshq.com/…` (https, www policy chosen once).
-
-| Optional later catch | Why it would exist |
+| Lens | Read |
 |---|---|
-| `smartsportshq.com` (no hyphen) | Classic hyphen insurance. **Check this at the same time as the primary** if you buy; do not assume it is free. |
-| Name-matching Pulse domains | **Not in the starter.** I will not invent a Pulse URL as a must-buy. If you want the domain to say Pulse, say so in a later prompt. |
-| `.kr` / `.co.kr` | Local trust later. Not required for Phase 1 static hub. |
+| Role | Hyphen insurance (Pulse after a dash). 301 → primary later. Not a second site. |
+| Hyphen risk | This **is** the hyphenated twin. Do not make it canonical. |
+| When to buy | Same registrar session as the primary **if** the cart price is ordinary. Skip if premium. |
 
-One canonical host (`www` or apex). Do not run two sites. Do not 302 forever.
+### Former — `smart-sportshq.com`
+
+Dropped as the target. HQ ≠ Pulse; Hub lookalike (`smartsportshub.com`) was the main confusion. No need to buy HQ unless you still want it for some other reason (not recommended).
+
+---
+
+## Conflict check (high-level; not a trademark opinion)
+
+| Name | Notes | Risk for Pulse URLs |
+|---|---|---|
+| Smart Sports Hub (smartsportshub.com) | Active English gear/content blog | **Lower** than with HQ. Hub ≠ Pulse. |
+| Sports HQ / The Sports HQ | App / UK retail | Low for `…pulse.com`. |
+| Other SmartSports (medicine, analytics, KR gym) | Different products | Name fragment only. |
+| SmartSports Pulse web property | **None found** on these domains | Does not prove the *name* is legally free. |
+
+---
+
+## Redirect plan
+
+After the WordPress site is live on the **primary**:
+
+1. Canonical: `https://smartsportspulse.com` **or** `https://www.smartsportspulse.com` — pick one.  
+2. If you own the backup: **301** `smartsports-pulse.com` (and www) → that canonical.  
+3. Do not keep two indexed sites. Do not 302 forever.  
+4. Do not invent extra TLDs (`.kr`, `.net`) as a must-buy.
 
 ---
 
 ## Recommendation (advice only)
 
-- **Primary (if registrar shows it free, and you still want this string):** `smart-sportshq.com` — it is the only candidate you named; `.com` fits a blog; it does not fight the title ban.  
-- **Optional redirect candidate (same shopping session, if free):** `smartsportshq.com` — hyphen risk is the main operational issue.  
-- **Do not buy** a pile of extra TLDs “just in case.”  
-- **Risks to accept if you buy the hyphenated .com:** Pulse ≠ HQ; HQ ≠ Hub (Smart Sports Hub); hyphen typos; English URL for a Korean UI (already intentional).  
-- **Readiness to buy:** **conditional** — ready *as a string* after you personally confirm availability, lookalike comfort (especially Hub), and that you will not regret dropping Pulse from the URL. Not ready until those human checks are done.
-
-I am not telling you to purchase today.
+- **Primary to buy (if your registrar agrees it is available at a normal price):** `smartsportspulse.com`.  
+- **Backup in the same cart if cheap:** `smartsports-pulse.com` → later 301.  
+- **Do not** make the hyphenated name the public brand URL.  
+- **Do not** buy the old HQ string unless you explicitly want it.  
+- I am not purchasing or pointing DNS.
 
 ---
 
 ## Pre-purchase checklist (you complete)
 
-Registrar / money
-
-- [ ] Search availability in **your** registrar (Namecheap, GoDaddy, Gabia, etc.) — including the **no-hyphen** twin.  
-- [ ] Account in the name of the person/entity who should own it (not a freelancer login). Enable 2FA.  
-- [ ] Payment method you control; invoice/email you will still have in 12 months.  
-- [ ] Privacy / WHOIS redaction if offered.  
-- [ ] Register **1 year minimum**; multi-year only if you already like the name.  
-- [ ] Turn **on auto-renew** and a calendar reminder 30 days before expiry.  
-- [ ] Registrar lock on after purchase; know the unlock + auth-code path.  
-- [ ] ICANN / KR transfer waiting periods: do not plan an immediate transfer.
-
-Legal / conflict (human, not this file)
-
-- [ ] Your own search: Korean + English “SmartSports Pulse,” “smart-sportshq,” “Smart Sports Hub.”  
-- [ ] If you need certainty, a trademark search — this research is not that.
-
-After purchase (still not hosting-bind until WP is ready)
-
-- [ ] Leave nameservers at the registrar **or** park with a simple “coming soon” — do not point at a random host yet.  
-- [ ] Decide apex vs `www` once; note it for Prompt 6 URLs (`smart-sportshq.com`).  
-- [ ] Email (e.g. Google Workspace / registrar mailbox) **before** or **with** DNS changes so you do not lock yourself out.  
-- [ ] Do not connect ads, Betman, or WordPress until the domain is in *your* account.
+- [ ] In **your** registrar, search `smartsportspulse.com` and `smartsports-pulse.com` (price, premium flag, trademark claim).  
+- [ ] Account in the owner’s name; 2FA.  
+- [ ] Payment method and email you will still have at renewal.  
+- [ ] WHOIS privacy if offered.  
+- [ ] 1 year minimum; auto-renew + calendar reminder 30 days before expiry.  
+- [ ] Registrar lock on; know auth-code / transfer waiting rules.  
+- [ ] Your own Korean + English search for “SmartSports Pulse.” Trademark search if you need legal certainty.  
+- [ ] After purchase: leave nameservers parked / registrar default until WordPress is ready.  
+- [ ] Choose apex vs `www` once.  
+- [ ] Set up email before or with DNS changes.  
+- [ ] Do not connect hosting, ads, or Betman until the domain is in *your* account.
 
 ---
 
-## What I need from you (no invented extra domains)
+## Other artifacts
 
-Nothing required to close this prompt. When you decide:
+`01-positioning.md`, `04-voice-brand-safety.md`, `05-seo-map.md`, and the interview files still mention `smart-sportshq.com`. They are **not** updated in this pass. Say if you want a sweep to `smartsportspulse.com`.
 
-1. Buy / wait / drop `smart-sportshq.com`.  
-2. Whether to also check/buy `smartsportshq.com` as a redirect.  
-3. Whether you ever want a **Pulse**-matching domain (not named in the starter — say the exact string if yes).
+---
 
-I will not register anything.
+## Confirmations (locked in this file)
+
+1. Primary target string: **`smartsportspulse.com`**.  
+2. Backup string: **`smartsports-pulse.com`**.  
+3. Registry/DNS this pass: **neither in the .com zone, no DNS** — still confirm at registrar before paying.
