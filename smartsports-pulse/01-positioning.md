@@ -1,7 +1,7 @@
 # Prompt 1 — Positioning
 
 Blog: SmartSports Pulse (헤더/소개: SmartSports Pulse (under: 스마트스포츠 펄스); 공식 표기: SmartSports Pulse)  
-Candidate domain: smart-sportshq.com  
+Candidate domain: smartsportspulse.com  
 Primary site language: Korean (존댓말). English working notes in this file.  
 Sources: starter block + `00-interview-answers.md` + positioning clarifications (2026-08-14). No categories, sitemap, or SEO keyword list in this file.
 

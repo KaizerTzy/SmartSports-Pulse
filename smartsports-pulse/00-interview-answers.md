@@ -1,7 +1,7 @@
 # Prompt 0 — Kickoff interview answers
 
 Blog: SmartSports Pulse  
-Candidate domain: smart-sportshq.com  
+Candidate domain: smartsportspulse.com  
 Captured in the respondent’s words. Light cleanup of formatting only. Intent not rewritten.
 
 Source questions: `00-interview-questions.md`

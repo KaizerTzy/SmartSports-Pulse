@@ -29,7 +29,7 @@ Goal: if someone types the name, they find this site — not a similarly named t
 |---|---|
 | SmartSports Pulse | Official English brand |
 | 스마트스포츠 펄스 | Official Korean line (headers/About) |
-| smart-sportshq / smart-sportshq.com | Domain; expect typos `smartsportshq`, `smart-sports-hq` |
+| smartsportspulse / smartsportspulse.com | Domain (locked primary). Expect typos `smartsports-pulse`, `smart-sports-pulse`, `smartsportspuls` |
 | SS Pulse Team | Byline only; do not rank the site as “SS Pulse” instead of SmartSports Pulse |
 | smart sports pulse | Spaced English variant |
 

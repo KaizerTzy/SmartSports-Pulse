@@ -28,7 +28,7 @@ Scale: 1 = low, 5 = high. Phase 1 sits in the middle-right of *clarity*, not of 
 |---|---|
 | Article byline | **SS Pulse Team** (your string). Not a personal guru name. Do not invent a Korean alias or expand the initials. |
 | About page | The **project**, not a tipster bio: who it is for, what “분석” means here (math/mechanics), 19+ placeholder, educational-only, bilingual brand line. Speaker on About: SS Pulse Team under the SmartSports Pulse brand. |
-| Brand line (unchanged) | Headers/About: `SmartSports Pulse (under: 스마트스포츠 펄스)`. Footers/official: `SmartSports Pulse`. Domain: `smart-sportshq.com`. |
+| Brand line (unchanged) | Headers/About: `SmartSports Pulse (under: 스마트스포츠 펄스)`. Footers/official: `SmartSports Pulse`. Domain: `smartsportspulse.com`. |
 | Photos / credentials | None unless you later supply a real, consented bio. Do not scrape identity-reference sites’ authors. |
 
 `SS Pulse Team` is the **byline**, not a second public brand. Do not replace SmartSports Pulse in headers, footers, or the domain with “SS Pulse.”

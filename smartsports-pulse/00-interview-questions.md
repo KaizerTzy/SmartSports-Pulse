@@ -1,7 +1,7 @@
 # Prompt 0 — Kickoff interview questions
 
 Blog: SmartSports Pulse  
-Candidate domain: smart-sportshq.com  
+Candidate domain: smartsportspulse.com  
 Artifact: interview only. No categories, keywords, sitemap, or strategy in this file.
 
 Please answer in your own words. If a question does not apply, say so. If you are unsure, say what you *do* know rather than guessing.
@@ -32,7 +32,7 @@ Please answer in your own words. If a question does not apply, say so. If you ar
 
 9. Korean register: 존댓말 or 반말? How much betting slang is acceptable in body copy? Any English terms you want kept in English on purpose (and any you want always Koreanized)?
 
-10. The brand name is English (SmartSports Pulse) and the candidate domain is English (`smart-sportshq.com`), while primary content is Korean. Is that intentional, and should the on-site name stay English, appear in Korean, or both? Do not invent a Korean brand name unless you already have one you want used.
+10. The brand name is English (SmartSports Pulse) and the candidate domain is English (`smartsportspulse.com`), while primary content is Korean. Is that intentional, and should the on-site name stay English, appear in Korean, or both? Do not invent a Korean brand name unless you already have one you want used.
 
 ## Topics
 

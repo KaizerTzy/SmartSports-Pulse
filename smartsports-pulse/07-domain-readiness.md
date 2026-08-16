@@ -106,7 +106,7 @@ After the WordPress site is live on the **primary**:
 
 ## Other artifacts
 
-`01-positioning.md`, `04-voice-brand-safety.md`, `05-seo-map.md`, and the interview files still mention `smart-sportshq.com`. They are **not** updated in this pass. Say if you want a sweep to `smartsportspulse.com`.
+Sweep (2026-08-16): interview, positioning, voice, SEO, and IA files now use **`smartsportspulse.com`** as the project domain. This file keeps `smart-sportshq.com` only as the **former** starter candidate.
 
 ---
 

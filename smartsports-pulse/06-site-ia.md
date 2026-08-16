@@ -8,7 +8,8 @@ Status: **approved** (2026-08-15). Do not change nav or required pages without a
 
 ## URL tree
 
-Vanilla WordPress. Category base = `topics` so we do **not** need a permalink plugin. Posts are evergreen `/%postname%/`.
+Vanilla WordPress. Category base = `topics` so we do **not** need a permalink plugin. Posts are evergreen `/%postname%/`.  
+Canonical host (locked): **`smartsportspulse.com`**. Apex vs `www` is a DNS choice at purchase. Backup `smartsports-pulse.com` is redirect-only if you buy it.
 
 ```
 /                              Home (latest posts + short mission; not a live board)
